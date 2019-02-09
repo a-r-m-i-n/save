@@ -19,7 +19,7 @@ define([], function() {
                 if (focusItem) {
                     focusItem.blur();
                 }
-                TBE_EDITOR.submitForm();
+                TBE_EDITOR.checkAndDoSubmit(1);
             }
         });
     }

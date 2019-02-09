@@ -23,9 +23,12 @@ class ButtonBarHook
      */
     public function loadRequireJsModule(array $params) : array
     {
-        /** @var PageRenderer $pageRenderer */
-        $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
-        $pageRenderer->loadRequireJsModule('TYPO3/CMS/Save/SaveShortcut');
+        $isDisabled = $GLOBALS['BE_USER']->uc['disableSaveShortcut'] ?? false;
+        if (!$isDisabled) {
+            /** @var PageRenderer $pageRenderer */
+            $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
+            $pageRenderer->loadRequireJsModule('TYPO3/CMS/Save/SaveShortcut');
+        }
         return $params['buttons'];
     }
 }

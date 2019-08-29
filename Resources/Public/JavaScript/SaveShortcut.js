@@ -1,4 +1,4 @@
-define([], function() {
+define(['ckeditor', 'jquery'], function (CKEDITOR, $) {
     'use strict';
 
 /*  | This extension is made with ❤ for TYPO3 CMS and is licensed
@@ -12,15 +12,45 @@ define([], function() {
     // and submit the current form.
 
     if (typeof TBE_EDITOR === 'object') {
-        window.addEventListener('keydown', function(event) {
+        var submitForm = function () {
+            var focusItem = document.querySelector(':focus');
+            if (focusItem) {
+                focusItem.blur();
+            }
+            TBE_EDITOR.checkAndDoSubmit(1);
+        };
+
+        window.addEventListener('keydown', function (event) {
             if ((event.ctrlKey || event.metaKey) && String.fromCharCode(event.which).toLowerCase() === 's') {
                 event.preventDefault();
-                var focusItem = document.querySelector( ':focus' );
-                if (focusItem) {
-                    focusItem.blur();
-                }
-                TBE_EDITOR.checkAndDoSubmit(1);
+                submitForm();
             }
+        });
+        CKEDITOR.on('instanceCreated', function (e) {
+            var editor = e.editor;
+            editor.on('contentDom', function () {
+                var isCtrl;
+
+                editor.document.on('keyup', function (event) {
+                    if (event.data.$.keyCode === 17) {
+                        isCtrl = false;
+                    }
+                });
+                editor.document.on('keydown', function (event) {
+                    if (event.data.$.keyCode === 17) {
+                        isCtrl = true;
+                    }
+                    if (event.data.$.keyCode === 83 && isCtrl === true) {
+                        try {
+                            event.data.$.preventDefault();
+                        } catch (err) {
+                        }
+
+                        submitForm();
+                        return false;
+                    }
+                });
+            });
         });
     }
 });

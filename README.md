@@ -36,9 +36,9 @@ For help please visit the [issue section](https://bitbucket.org/t--3/save/issues
 
 ### 1.1.0
 
-- [TASK] Make CTRL+S also work inside of CKeditor
-- [TASK] Improve README
-
+- **FEATURE** - Add TYPO3 10 support
+- **TASK** - Make CTRL+S also work inside of CKeditor
+- **TASK** - Improve README
 
 ### 1.0.0
 

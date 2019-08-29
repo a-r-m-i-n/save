@@ -17,7 +17,7 @@ define(['ckeditor', 'jquery'], function (CKEDITOR, $) {
             if (focusItem) {
                 focusItem.blur();
             }
-            TBE_EDITOR.checkAndDoSubmit(1);
+            $('button[form="EditDocumentController"][name="_savedok"]').trigger('click');
         };
 
         window.addEventListener('keydown', function (event) {

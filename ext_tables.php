@@ -13,7 +13,7 @@ if (!defined('TYPO3_MODE')) {
 if (TYPO3_MODE === 'BE') {
     $GLOBALS['TYPO3_USER_SETTINGS']['columns']['disableSaveShortcut'] = [
         'type' => 'check',
-        'label' => 'LLL:EXT:save/Resources/Private/Language/locallang.xml:userSettings.disableSaveShortcut',
+        'label' => 'LLL:EXT:save/Resources/Private/Language/locallang.xlf:userSettings.disableSaveShortcut',
     ];
 
     \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToUserSettings(

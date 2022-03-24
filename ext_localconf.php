@@ -11,6 +11,6 @@ if (!defined('TYPO3_MODE')) {
 }
 
 if (TYPO3_MODE === 'BE') {
-    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook'][$_EXTKEY] =
+    $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook']['save'] =
         \T3\Save\Hooks\ButtonBarHook::class . '->loadRequireJsModule';
 }

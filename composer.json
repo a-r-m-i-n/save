@@ -2,7 +2,7 @@
     "name": "t3/save",
     "description": "Save with shortcuts. Adds the possibility to use the keyboard shortcut CTRL+S to save in TYPO3 CMS backend.",
     "type": "typo3-cms-extension",
-    "homepage": "https://bitbucket.org/t--3/save",
+    "homepage": "https://github.com/a-r-m-i-n/save",
     "license": "GPL-2.0+",
     "authors": [
         {
@@ -14,18 +14,16 @@
     ],
     "require": {
         "php": ">=7.0",
-        "typo3/cms-core": "^8.7 || ^9.5 || ^10.0"
+        "typo3/cms-core": "^8.7 || ^9.5 || ^10.0 || ^11.0"
     },
     "autoload": {
         "psr-4": {
             "T3\\Save\\": "Classes"
         }
     },
-    "replace": {
-        "save": "*"
-    },
-    "scripts": {
-        "phpcs": "phpcs --standard=psr2 --extensions=php --ignore=*/vendor/* .",
-        "phpcbf": "phpcbf --standard=psr2 --extensions=php --ignore=*/vendor/* ."
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "save"
+        }
     }
 }

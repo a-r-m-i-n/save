@@ -10,14 +10,14 @@ $EM_CONF[$_EXTKEY] = [
     'title' => 'Save with shortcut',
     'description' => 'Adds the possibility to use the keyboard shortcut CTRL+S to save in TYPO3 CMS backend.',
     'category' => 'be',
-    'version' => '1.1.0',
+    'version' => '1.2.0-dev',
     'state' => 'stable',
     'author' => 'Armin Vieweg',
     'author_email' => 'armin@v.ieweg.de',
     'author_company' => '',
     'constraints' => [
         'depends' => [
-            'typo3' => '8.7.0-10.9.99',
+            'typo3' => '8.7.0-11.5.99',
         ],
         'conflicts' => [],
         'suggests' => [],

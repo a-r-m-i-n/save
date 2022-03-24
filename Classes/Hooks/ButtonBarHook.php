@@ -4,7 +4,7 @@ namespace T3\Save\Hooks;
 /*  | This extension is made with ❤ for TYPO3 CMS and is licensed
  *  | under GNU General Public License.
  *  |
- *  | (c) 2019 Armin Vieweg <armin@v.ieweg.de>
+ *  | (c) 2019-2022 Armin Vieweg <armin@v.ieweg.de>
  */
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;

@@ -34,6 +34,12 @@ For help please visit the [issue section](https://bitbucket.org/t--3/save/issues
 
 ## Changelog
 
+### 1.2.0
+
+- [FEATURE] Add TYPO3 11 compatibility 
+- [DEVOPS] Add DDEV configuration 
+- [TASK] Remove old Bitbucket pipeline configuration and Vagrantfile 
+
 ### 1.1.0
 
 - **FEATURE** - Add TYPO3 10 support

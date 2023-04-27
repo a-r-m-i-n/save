@@ -1,0 +1,14 @@
+services:
+  _defaults:
+    autowire: true
+    autoconfigure: true
+    public: false
+  T3\Save\:
+    resource: '../Classes/*'
+    exclude: '../Classes/Domain/Model/*'
+  T3\Save\EventListener\ModifyButtonBarEventListener:
+    tags:
+      -
+        name: event.listener
+        identifier: t3/save/modify-button-bar-event-listener
+        event: TYPO3\CMS\Backend\Template\Components\ModifyButtonBarEvent

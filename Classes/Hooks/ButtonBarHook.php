@@ -12,6 +12,8 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 /**
  * Button Hook
  *
+ * @deprecated Legacy Hook for TYPO3 <=11
+ *
  * @see \TYPO3\CMS\Backend\Template\Components\ButtonBar
  */
 class ButtonBarHook

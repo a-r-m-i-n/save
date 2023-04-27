@@ -6,11 +6,11 @@
  *  | (c) 2019-2022 Armin Vieweg <armin@v.ieweg.de>
  */
 
-if (!defined('TYPO3_MODE')) {
+if (!defined('TYPO3_MODE') && !defined('TYPO3')) {
     die('Access denied.');
 }
 
-if (TYPO3_MODE === 'BE') {
+if (defined('TYPO3_MODE') && TYPO3_MODE === 'BE') {
     $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['Backend\Template\Components\ButtonBar']['getButtonsHook']['save'] =
         \T3\Save\Hooks\ButtonBarHook::class . '->loadRequireJsModule';
 }

@@ -6,11 +6,11 @@
  *  | (c) 2019-2022 Armin Vieweg <armin@v.ieweg.de>
  */
 
-if (!defined('TYPO3_MODE')) {
+if (!defined('TYPO3_MODE') && !defined('TYPO3')) {
     die('Access denied.');
 }
 
-if (TYPO3_MODE === 'BE') {
+if (defined('TYPO3_MODE') && TYPO3_MODE === 'BE') {
     $GLOBALS['TYPO3_USER_SETTINGS']['columns']['disableSaveShortcut'] = [
         'type' => 'check',
         'label' => 'LLL:EXT:save/Resources/Private/Language/locallang.xlf:userSettings.disableSaveShortcut',

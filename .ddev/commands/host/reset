@@ -3,7 +3,7 @@
 read -p "Remove this project entirely? (incl. volumes) (y/n)? " CONT
 if [ "$CONT" = "y" ]; then
   ddev delete -Oy
-  docker volume rm save-v9-data save-v10-data save-v11-data
+  docker volume rm save-v12-data
 else
   echo "Canceled.";
 fi

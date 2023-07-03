@@ -7,9 +7,6 @@ namespace T3\Save\EventListener;
 use TYPO3\CMS\Backend\Template\Components\ModifyButtonBarEvent;
 use TYPO3\CMS\Core\Page\PageRenderer;
 
-/**
- * This Event is used for TYPO3 >=12
- */
 class ModifyButtonBarEventListener
 {
     private PageRenderer $pageRenderer;

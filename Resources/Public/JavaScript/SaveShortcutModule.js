@@ -3,7 +3,7 @@ import $ from 'jquery';
 /*  | This extension is made with ❤ for TYPO3 CMS and is licensed
  *  | under GNU General Public License.
  *  |
- *  | (c) 2019-2022 Armin Vieweg <armin@v.ieweg.de>
+ *  | (c) 2019-2023 Armin Vieweg <armin@v.ieweg.de>
  */
 
 // Registers event for CTRL+S shortcut, when TBE_EDITOR is available.

@@ -18,6 +18,9 @@ class ModifyButtonBarEventListener
 
     public function __invoke(ModifyButtonBarEvent $event): void
     {
-        $this->pageRenderer->loadJavaScriptModule('@vendor/save/SaveShortcutModule.js');
+        $isDisabled = $GLOBALS['BE_USER']->uc['disableSaveShortcut'] ?? false;
+        if (!$isDisabled) {
+            $this->pageRenderer->loadJavaScriptModule('@vendor/save/SaveShortcutModule.js');
+        }
     }
 }

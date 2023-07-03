@@ -36,6 +36,11 @@ More info: https://github.com/a-r-m-i-n/ddev-for-typo3-extensions
 
 ## Changelog
 
+### 2.0.0
+
+- [FEATURE] Add TYPO3 12 compatibility
+- [TASK] Dropped TYPO3 8-11 support 
+
 ### 1.2.0
 
 - [FEATURE] Add TYPO3 11 compatibility

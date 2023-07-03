@@ -9,7 +9,7 @@ RUN echo "<body><h1>EXT:${EXTENSION_KEY} Dev Environments</h1><ul>" >> /var/www/
 RUN echo "<li><h2>TYPO3 12.x</h2><a href="https://v12.${DDEV_SITENAME}.ddev.site/">Frontend</a> | <a href="https://v12.${DDEV_SITENAME}.ddev.site/typo3/">Backend</a></li>" >> /var/www/html/index.html
 RUN echo "</ul>" >> /var/www/html/index.html
 RUN echo "<hr>" >> /var/www/html/index.html
-RUN echo "<h3>TYPO3 Backend</h3><ul><li><b>User:</b> <code>admin</code></li><li><b>Password:</b> <code>password</code> (also Install Tool)</li></ul>" >> /var/www/html/index.html
+RUN echo "<h3>TYPO3 Backend</h3><ul><li><b>User:</b> <code>admin</code></li><li><b>Password:</b> <code>Password:joh316</code> (also Install Tool)</li></ul>" >> /var/www/html/index.html
 RUN echo "</body></html>" >> /var/www/html/index.html
 
 

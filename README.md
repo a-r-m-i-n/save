@@ -4,18 +4,15 @@ Adds the possibility to use the keyboard shortcut CTRL+S to save in TYPO3 CMS ba
 
 ![EXT:save extension icon](Resources/Public/Icons/Extension.png "EXT:save extension icon")
 
-
 ## Installation
 
-Just fetch **EXT:save** from TER or Packagist and install it.
+Just fetch **EXT:save** from TER or **t3/save** from Packagist and install it.
 Clear the system caches and reload the backend in your browser.
-
 
 ## Usage
 
 Just press ``CTRL+S`` when you want to save the record you are currently working on. Form validation will be triggered
 and if successful, the record will be saved.
-
 
 ## Configuration
 
@@ -24,12 +21,17 @@ You can disable it for your user in your user settings.
 
 ![User settings in TYPO3 CMS backend](Resources/Public/Images/user-settings.png "User settings in TYPO3 CMS backend")
 
-
 ## Support
 
 If you like this TYPO3 extension, you can [donate some funds](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2DCCULSKFRZFU) to support further development. Thank you!
 
-For help please visit the [issue section](https://bitbucket.org/t--3/save/issues) on Bitbucket.
+For help please visit the [issue section](https://github.com/a-r-m-i-n/save/issues) on GitHub.
+
+## DDEV Environment
+
+This repository contains a handy DDEV configuration, which allows you to run the extension in a local TYPO3 environment.
+
+More info: https://github.com/a-r-m-i-n/ddev-for-typo3-extensions
 
 
 ## Changelog

@@ -1,5 +1,16 @@
 # TYPO3 CMS Extension: Save with shortcut
 
+---
+
+⚠️ **Important note: End of maintenance**
+
+Because TYPO3 introduced shortcuts in version 13 on its own, this extension will no longer get maintained.
+
+For older versions of TYPO3 you can still use this extension.
+
+---
+
+
 Adds the possibility to use the keyboard shortcut CTRL+S to save in TYPO3 CMS backend.
 
 ![EXT:save extension icon](Resources/Public/Icons/Extension.png "EXT:save extension icon")
